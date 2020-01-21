@@ -1,0 +1,175 @@
+-*- mode: org -*-
+#+title: Presentation 01
+#+language: en
+#+options: H:4 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t LaTeX:t d:(not "HINT")
+#+startup: entitiespretty showeverything
+#+setupfile: theme-bigblow.setup
+
+* Three Student Samples
+   https://rickneff.github.io/images/one-word-to-describe-learning-discrete-math-dm1-w19-early.png
+
+   https://rickneff.github.io/images/one-word-to-describe-learning-discrete-math-dm1-w19-later.png
+
+   https://rickneff.github.io/images/one-word-to-describe-learning-discrete-math.png
+* Glimpse What This Class Is Like
+** For Starters
+   [[https://rickneff.github.io/icmslides2.pdf][From a Mathematical Conference]]
+** What IS Discrete Mathematics?
+*** Digital versus Analog
+    [[https://www.mathsisfun.com/time-clocks.html][Clocks]]
+*** Motto
+    TLA ISA
+**** Means?
+     Three Letter Acronym Is A Three Letter Acronym
+**** Six Times Three
+     SAL
+     FAR
+     CAP
+     NTP
+     TAG
+     LAG
+***** Expanded
+      S&L \rarr Sets and Logic
+      F&R \rarr Functions and Relations
+      C&P \rarr Counting (Combinatorics) and Probability
+      NT&P \rarr Number Theory and Practice
+      T&G \rarr Trees & Graphs
+      L&G \rarr Languages and Grammars
+*** Cycles
+    12, 10, 7, 2.
+**** As Manifest In
+     - Clock
+     - Decimal
+     - Calendar
+     - Binary
+***** AKA
+      Bitstrings
+****** How many?
+       | n | # of bitstrings of length n         |
+       |---+-------------------------------------|
+       | 0 | 1 ("")                              |
+       | 1 | 2 (0 1)                             |
+       | 2 | 4 (00 01 10 11)                     |
+       | 3 | 8 (000 001 010 011 100 101 110 111) |
+       | 4 | 16                                  |
+
+#+begin_src elisp :results silent
+  (defun do-magic ()
+    (assign
+       start (point-min)
+         end (point-max)
+           n (count-lines-region start end)
+    )
+    (copy-region start end)
+    (paste)
+    (goto-char start)
+    (do-times n (insert "0") (forward-line 1))
+    (do-times n (insert "1") (forward-line 1))
+  )
+#+end_src
+****** The \ldquo{}same\rdquo code in C++
+#+begin_src C++
+  void do_magic () {
+    int start = point_min();
+    int end = point_max();
+    int n = count_lines_region(start, end);
+    copy_region(start, end);
+    paste();
+    goto_char(start);
+    for (int i = 0; i < n; i++) {
+      insert("0");
+      forward_line(1);
+    }
+    for (int i = 0; i < n; i++) {
+      insert("1");
+      forward_line(1);
+    }
+  }
+#+end_src
+****** Demo
+       file:howmany.txt
+****** Demo with Constraint Imposed
+       | n | # of bitstrings of length n |               |
+       |   |  with no 00 substring in it | Exclude       |
+       |---+-----------------------------+---------------|
+       | 0 |                           1 |               |
+       | 1 |                           2 |               |
+       | 2 |                           3 | 00            |
+       | 3 |                           5 | 000 001 100   |
+       | 4 |                           8 | 0000 0001 ... |
+** Numbers
+   Watch Arthur Benjamin\rsquo{}s TED talk [[https://www.ted.com/talks/arthur_benjamin_the_magic_of_fibonacci_numbers][The Magic of Fibonacci Numbers]].
+*** The Why
+#+begin_example
+          The Golden Ratio (or Golden Mean) is the ratio
+          of the base (width) to the height of the Golden Rectangle:
+
+                        x
+            ----------------------
+           |                      |
+           |                      |
+           |                      |  y
+           |                      |
+           |                      |
+            ----------------------
+
+          The definition requires the ratio of the larger
+          length (x) to the smaller length (y) to be the
+          same as the ratio of the sum of the lengths to
+          the larger length:
+
+                        x     x + y
+                       --- =  -----
+                        y       x
+
+          Let y = 1:
+
+                        x     x + 1
+                       --- =  -----
+                        1       x
+
+          and solve for x in
+
+          x^2 = x + 1
+
+          using the quadratic formula.
+
+          First, rewrite the equation as x^2 - x - 1 = 0.
+
+          The quadratic formula says if ax^2 + bx + c = 0 then
+
+               -b \pm \radic(b^2 - 4ac)
+          x =  -----------------
+                   2a
+#+end_example
+    which inlined looks like x = -b \pm \radic(b^ 2 - 4ac) / 2a.
+
+**** Or using LaTeX
+     The quadratic formula says if \(ax^2 + bx + c = 0\) then
+
+     \(x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\)
+     #+begin_src elisp
+  (setq a 1 b -1 c -1 x (/ (+ (- b) (sqrt (- (* b b) (* 4 a c)))) (float (* 2 a))))
+     #+end_src
+
+** Words
+   first three odds double halve divide reciprocate
+
+   1 3 5 \rarr double \rarr 11 33 55 \rarr 113355 \rarr halve \rarr 113 355 \rarr (/ 113 355.0) 0.3183098591549296 \rarr
+   (/ 1 0.3183098591549296) 3.141592920353982 \approx pi = 3.141592653589793...
+*** Word Puzzles
+     Category: Birds
+    BIRNO \rarr ROBIN
+    ELAGE \rarr EAGLE
+    ACNRE \rarr CRANE
+    SOGOE \rarr GOOSE
+***** Why
+      Why is the 4th of July.
+****** Because?
+       'y' is the 4th (letter) of 'July'.
+*** How READILY REALITY shows!
+    D->L
+
+    L->T
+***** The Secret
+      D L T  \leftrightarrow 4 12 20 = 4(1 3 5)

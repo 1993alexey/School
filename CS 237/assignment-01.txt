@@ -1,0 +1,206 @@
+-*- mode: org -*-
+#+title: Assignment 01
+#+language: en
+#+options: H:4 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t LaTeX:t d:(not "HINT")
+#+startup: entitiespretty showeverything
+#+setupfile: theme-bigblow.setup
+
+:HINT:
+ Click your mouse on the links below, or with your cursor somewhere in them,
+ press the Enter key.
+
+[[elisp:(relocate-file-to-work-folder)][Relocate File to Work Folder]]
+
+[[elisp:(find-file-other-window%20"generic-instructions.txt")][Read Instructions]]
+
+[[elisp:(browse-url-of-file%20(org-html-export-to-html))][Export to HTML and Browse]]
+
+[[elisp:(org-clock-report%201)][Insert/Update Clock Summary Report]]
+:END:
+* Exercises
+** DONE CRC
+   CLOSED: [2020-01-14 Tue 14:48]
+#+begin_note
+  This is the first of many exercises/problems/puzzles to come, always displayed
+  in this type of yellow-background box.
+
+  Propose a connection between discrete mathematics and the image below.
+  (This is a \ldquo{}free association\rdquo exercise --- there is no \ldquo{}right\rdquo answer.)
+#+end_note
+
+#+ATTR_HTML: :alt Desert :title What is the meaning of this?!
+  [[https://rickneff.github.io/img/desert.jpg]]
+#+begin_info
+  Discrete math is discrete, meaning it is numbered. The sand is also discrete because it can be counted.
+#+end_info
+** DONE DGZ
+   CLOSED: [2020-01-14 Tue 14:48]
+#+begin_note
+  The operation called /dehydration/ takes a word and deletes all letters in it
+  from H to O. What is the original (rehydrated) text of this dehydrated
+  sequence of words?
+
+  TE TE AS CE TE WARUS SAD T TA OF AY TGS F SES AD SPS AD SEAG WAX F CABBAGES
+  AD GS AD WY TE SEA S BG T AD WETER PGS AVE WGS
+#+end_note
+#+begin_info
+  "The time has come," the Walrus said,
+   "To talk of many things:
+Of shoes—and ships—and sealing-wax—
+   Of cabbages—and kings—
+And why the sea is boiling hot—
+   And whether pigs have wings."
+#+end_info
+* Problems
+** DONE CHJ
+   CLOSED: [2020-01-14 Tue 14:48]
+#+begin_note
+  Let $n / 0$ be infinity, for any positive integer /n/.
+
+  What English word has the largest /finite/ consonant-vowel-ratio (CVR)? For
+  example, the CVRs of the words (including the TLA) in the previous sentence
+  are 3:1, 5:2, 3:1, 2:1, 2:1, 5:2, 1:1, 2:1, 3:2, 2:3, and infinity (3:0).
+#+end_note
+#+begin_info
+  strengths.
+#+end_info
+** DONE DZB
+   CLOSED: [2020-01-14 Tue 14:48]
+#+begin_note
+  In the figure below, the innermost circle has radius 1. It is circumscribed by
+  an equilateral triangle, which is circumscribed by a circle, which is
+  circumscribed by a square, which is circumscribed by yet another circle, and
+  so forth.
+
+  What is the radius of the outermost circle?
+#+end_note
+#+ATTR_HTML: :alt Limiting Radius :title Circumscribed Polygons and Circles
+  [[https://rickneff.github.io/img/circumscribed-polygons-and-circles.png]]
+#+begin_info
+
+        let a = 1
+        let n = 3
+
+        for (let i = 0; i < 5000000; i++) {
+            a = getRadius(a, n++)
+        }
+
+        console.log(a)
+
+        function getRadius(a, n) {
+            return a / Math.cos((180 / n))
+        }
+
+  (el)
+#+begin_src elisp :raw
+  ;  (list
+      (setq a 1 n 3)
+
+      (defun get-radius(a n)
+         (let* ((devider (* (/ 180 n) (/ PI 180))
+                (cos-val (cos devider)))
+           (/ a cos-val)
+         )
+      )
+
+      (loop for i from 0 to 500000
+            do (setq a (get-radius a n))
+            finally return a)
+
+
+  ;    (let ((name alex)
+  ;          (email hello)))
+  ;
+  ;    '(test bla-bla)
+  ;    (if (= test 66) "hello" "baaaaa")
+  ;
+  ;    (loop for 10 to 100
+  ;       do
+  ;  )
+  ;)
+
+ #+end_src
+
+#+results:
+: -1.0e+INF
+
+#+end_info
+* Puzzles
+** DONE DOK
+   CLOSED: [2020-01-14 Tue 14:48]
+#+begin_note
+  Pick a number (a positive integer). Form the product of that number, one more
+  than that number, and one more than twice that number. Repeat for several
+  different numbers. There is a pattern to these products. What is it?
+#+end_note
+*** Rephrase
+    What is the pattern?
+*** Approach
+    Write down 10 numbers and brainstorm different patterns
+*** Solution
+    The most obvious solution is that all numbers are odd, but I found a facinating pattern
+    The next number is the difference of the previous 2 number plus 4.
+*** Proof
+    10
+    10 * 10 = 100
+    100 + 1 = 101
+    101 * 2 + 1 = 203
+
+    1
+    1 * 1 = 1
+    1 + 1 = 2
+    2 * 2 + 1 = 5
+
+    2
+    2 * 2 = 4
+    4 + 1 = 5
+    5 * 2 + 1 = 11
+
+    3
+    3 * 3 = 9
+    9 + 1 = 10
+    10 * 2 + 1 = 21
+
+    4
+    4 * 4 = 16
+    16 + 1 = 17
+    17 * 2 + 1 = 35
+
+    5
+    5 * 5 = 25
+    25 + 1 = 26
+    26 * 2 + 1 = 53
+
+
+
+    53 - 35 = 18
+    35 - 21 = 14
+    21 - 11 = 10
+    11 -  5 =  6
+
+
+** TODO CJF
+#+begin_note
+   Numbers and words. Cycles and patterns.
+
+   Do you think mathematicians discover or invent patterns? While pondering that
+   question, consider what [[https://en.wikipedia.org/wiki/G._H._Hardy][G. H. Hardy]] famously wrote: /A mathematician, like a
+   painter or a poet, is a maker of patterns. If his patterns are more permanent/
+   /than theirs, it is because they are made with ideas/. What do you think he
+   meant by that?
+
+   Here\rsquo{}s a puzzle superficially just involving a 6-digit number and a 6-letter
+   \ldquo{}word\rdquo. What does
+
+   654321
+
+   have to do with
+
+   CLAHCK
+
+   other than they both follow the \ldquo{}length 6\rdquo pattern?
+#+end_note
+*** Rephrase
+*** Approach
+*** Solution
+*** Proof

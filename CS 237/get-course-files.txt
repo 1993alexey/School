@@ -1,0 +1,60 @@
+-*- mode: org -*-
+#+title: Get Course Files
+#+language: en
+#+options: H:4 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t LaTeX:t d:(not "HINT")
+#+options: html-postamble:nil
+#+startup: entitiespretty showeverything
+#+setupfile: theme-bigblow.setup
+
+#+name: dm102W20content
+| syllabus-portfolio.txt         | 1065261021099767 |
+| elisp-mini-primer.txt          | 1338969172819437 |
+| org-mode-primer.txt            | 2167915059056782 |
+| presentation-01.txt            | 1703193892373733 |
+| class-directed-learning-01.txt | 1271906179214263 |
+| assignment-01.txt              | 1291895615589889 |
+| assignment-01-key.txt          | 1423875801149432 |
+| presentation-02.txt            | 6204133338040978 |
+| class-directed-learning-02.txt | 1915215879617430 |
+| assignment-02.txt              | 2101032411773388 |
+| assignment-02-key.txt          | 1294998504754001 |
+| presentation-03.txt            | 1843475784448155 |
+| class-directed-learning-03.txt | 2526825708069037 |
+| assignment-03.txt              | 1434153875978482 |
+| assignment-03-key.txt          | 1140966909015062 |
+| presentation-04.txt            | 7606952258785200 |
+| class-directed-learning-04.txt | 8959922712100709 |
+| assignment-04.txt              | 3523615015659315 |
+| assignment-04-key.txt          | 2152433967554723 |
+| presentation-05.txt            | 1983757676522578 |
+| class-directed-learning-05.txt | 1539301971613238 |
+| assignment-05.txt              | 1576412136367074 |
+| assignment-05-key.txt          | 8580580168806917 |
+| presentation-06.txt            | 9009771179529423 |
+| class-directed-learning-06.txt | 2182611672016405 |
+| assignment-06.txt              | 4946197619545241 |
+| presentation-07.txt            | 2124039568597000 |
+| class-directed-learning-07.txt | 5200783632058787 |
+| assignment-07.txt              | 1718670396755667 |
+| presentation-08.txt            | 1041259010027364 |
+| class-directed-learning-08.txt | 1163388063609045 |
+| assignment-08.txt              | 6368780223431167 |
+| presentation-09.txt            | 2264321460671422 |
+| class-directed-learning-09.txt | 1806697764012213 |
+| assignment-09.txt              | 1860928657144260 |
+| presentation-10.txt            | 1847810383670669 |
+| class-directed-learning-10.txt | 1824018309210866 |
+| assignment-10.txt              | 1923847455626476 |
+| presentation-11.txt            | 1402269207290618 |
+| class-directed-learning-11.txt | 1825510805985215 |
+| assignment-11.txt              | 1239112776862053 |
+| presentation-12.txt            | 9567280309105666 |
+| class-directed-learning-12.txt | 1827003302759564 |
+| assignment-12.txt              | 5543780980976304 |
+| presentation-13.txt            | 5111868545305152 |
+| class-directed-learning-13.txt | 1828495799533913 |
+| assignment-13.txt              | 2175486428546901 |
+
+#+begin_src elisp
+  (get-dm-files (get-org-sbv dm102W20content))
+#+end_src
