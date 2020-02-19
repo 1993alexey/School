@@ -167,7 +167,7 @@
   6. Take it or leave it.
 #+end_note
 #+begin_info
-  1. I
+  1. E
   2. I
   3. I
   4. I
@@ -278,13 +278,15 @@
   (setq A '(verve vim vigor)
         B '(butter vinegar pepper vigor)
         C (hlt-set-union A B)
-        D (hlt-set-intersection A B))
+        D (hlt-set-intersection A B)
+        Result (list (list "1" C) (list "2" D)))
 
-  D
+
 #+end_src
 
 #+results:
-| vigor |
+| 1 | (vim verve butter vinegar pepper vigor) |
+| 2 | (vigor)                                 |
 
   3. [vim verve vinegar vigor]
   4. [butter vinegar pepper vigor]
@@ -314,7 +316,7 @@
   1. I studied. I got an A on the test.
   2. I did not study or I did not get an A on the test
   3. I did not study. I did not study or I got an A on the test
-  4. I did not study which implies that I studied or I got an A on the test.
+  4. I did not study which implies I did not got an A on the test.
 #+end_info fs
 ** DONE UTQ
    CLOSED: [2020-01-14 Tue 17:45]
@@ -614,8 +616,8 @@ This is why the truth table shows only 1 negative result.
 #+begin_info
   1. True
   2. False
-  3. False
-  4. False
+  3. True
+  4. True
 #+end_info
 ** TODO OOY *
 #+begin_note
@@ -656,8 +658,8 @@ This is why the truth table shows only 1 negative result.
 | p | q | p \rightarrow q |
 |---+---+-------|
 | 0 | 0 |     1 |
-| 0 | 1 |     0 |
-| 1 | 0 |     1 |
+| 0 | 1 |     1 |
+| 1 | 0 |     0 |
 | 1 | 1 |     1 |
 
 | p | q | p \oplus q |
@@ -669,17 +671,17 @@ This is why the truth table shows only 1 negative result.
 
 | p | q | \not q | p \rightarrow \not q |
 |---+---+-----+---------|
-| 0 | 0 |   1 |       0 |
+| 0 | 0 |   1 |       1 |
 | 0 | 1 |   0 |       1 |
 | 1 | 0 |   1 |       1 |
-| 1 | 1 |   0 |       1 |
+| 1 | 1 |   0 |       0 |
 
 | p | q | \not p | \not p \rightarrow q |
 |---+---+-----+---------|
-| 0 | 0 |   1 |       1 |
+| 0 | 0 |   1 |       0 |
 | 0 | 1 |   1 |       1 |
 | 1 | 0 |   0 |       1 |
-| 1 | 1 |   0 |       0 |
+| 1 | 1 |   0 |       1 |
 
 | p | q | \not q | p \land \not q |
 |---+---+-----+---------|

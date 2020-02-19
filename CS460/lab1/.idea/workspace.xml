@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05201dcd-5d79-4fa5-9ae6-a58166e97a2c" name="Default Changelist" comment="" />
+    <list default="true" id="05201dcd-5d79-4fa5-9ae6-a58166e97a2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../CS 237/assignment-02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS 237/assignment-02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS 237/syllabus-portfolio.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS 237/syllabus-portfolio.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS460-Hw04-Ch1.5.doc" beforeDir="false" afterPath="$PROJECT_DIR$/../CS460-Hw04-Ch1.5.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DailyQuizTrackingCS460_p1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../DailyQuizTrackingCS460_p1.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/HttpRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/WebServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1WUSNepXvc4L4bU2eegfhlXj5T4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -48,13 +74,26 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/WebServer.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="3" />
+          <line>128</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

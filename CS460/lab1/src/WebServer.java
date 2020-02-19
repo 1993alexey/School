@@ -1,14 +1,20 @@
 /*************************************************************************
 * Program:
-*    Lab Webserver, Computer Communication and Networking
+*    Lab WebserverT2, Computer Communication and Networking
 *    Brother Jones, CS 460
 * Author:
-*    Your Name
+*    Alex Shnyrov
 * Summary:
-*    This program ...
+*    This program is a simple non-persistent http server.
 ************************************************************************** */
-/*** NOTE: The header needs to be changed for second submission (take 2) ***/
-/*** NOTE: The header needs to be changed for second submission (take 2) ***/
+
+/*****************************************************************************
+* Changes made to my code for the re-submission:
+*   Nothing was changed for take 2
+*   P.S. I'm using a home page and a 404 html page. Those files will not be found
+*   because this lab requires the submission of only the server file and nothing
+*   else
+*****************************************************************************/
 
 
 import java.io.*;

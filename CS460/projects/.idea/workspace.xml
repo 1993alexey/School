@@ -11,7 +11,22 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d5e98ec-65ea-4ffd-88a6-73001e56b545" name="Default Changelist" comment="" />
+    <list default="true" id="6d5e98ec-65ea-4ffd-88a6-73001e56b545" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS 237/assignment-02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS 237/assignment-02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS 237/syllabus-portfolio.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS 237/syllabus-portfolio.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS 371/User Interface Evaluation and Design.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS 371/User Interface Evaluation and Design.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS460-Hw04-Ch1.5.doc" beforeDir="false" afterPath="$PROJECT_DIR$/../CS460-Hw04-Ch1.5.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Computer Networking A Top-Down Approach 7th edition.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Computer Networking A Top-Down Approach 7th edition.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DailyQuizTrackingCS460_p1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../DailyQuizTrackingCS460_p1.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/lab1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/out/production/lab1/HttpRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/out/production/lab1/WebServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/src/WebServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/src/WebServer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +36,11 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1W8fPKu73e54W9wN13RskFYAa9s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -67,6 +86,7 @@
       <workItem from="1578539209071" duration="348000" />
       <workItem from="1578865736914" duration="79000" />
       <workItem from="1578865822506" duration="924000" />
+      <workItem from="1581830136301" duration="4000" />
     </task>
     <servers />
   </component>
